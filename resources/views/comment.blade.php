@@ -5,6 +5,12 @@
 @section('main')
 <main class="text-white bg-dark my-4 container">
     <h1>Отзывы</h1>
+
+
+
+
+
+    
     @if($errors->any())
         <div class="alert alert-danger">
             <ul>
