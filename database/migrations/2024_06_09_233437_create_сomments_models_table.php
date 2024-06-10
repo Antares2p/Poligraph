@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('сomments_models', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table-> comment('text');
+            $table->string('email')->unique();
+            $table-> string('subject');
+            $table-> text('message');
             $table->timestamps();
         });
     }

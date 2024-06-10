@@ -11,6 +11,9 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
+        .card {
+            margin: 10px;
+        }
     </style>
 </head>
 <body class="bg-dark">
@@ -57,7 +60,7 @@
             <div class="col-md-4">
                 <div class="d-flex flex-column align-items-start">
                     <p>Социальные сети:</p>
-                    <a href="#">Вконтакте</a>
+                    <a href="https://vk.com/club21135801">Вконтакте</a>
                     <a href="#">Телеграмм</a>
                     <a href="#">Инстаграмм</a>
                 </div>
@@ -97,7 +100,8 @@
         document.body.classList.toggle('bg-dark');
 
         const header = document.querySelector('header');
-        const footer = document.querySelector('footer');        
+        const footer = document.querySelector('footer');
+        const main = document.querySelector('main');          
         header.classList.toggle('bg-light');
         header.classList.toggle('bg-dark');
 
