@@ -1,7 +1,9 @@
 @extends('layout')
 
-@section('main')
-<main>
+@section('title')Главная страница @endsection
 
+@section('main')
+<main class="container my-4">
+    
 </main>
 @endsection
