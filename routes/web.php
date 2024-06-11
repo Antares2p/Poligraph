@@ -24,3 +24,4 @@ Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->na
 Route::post('/register', [RegisterController::class, 'register']);
 
 Route::get('/request-form', [RequestController::class, 'showForm'])->name('request.form');
+Route::post('/submit-request', [RequestController::class, 'submitRequest'])->name('submit.request');
