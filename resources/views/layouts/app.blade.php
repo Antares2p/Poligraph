@@ -35,13 +35,8 @@
     </ul>
     <div class="col-md-3 text-end">
         @guest
-            @if (Route::has('login'))
-                <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Войти</a>
-            @endif
-
-            @if (Route::has('register'))
-                <a href="{{ route('register') }}" class="btn btn-primary me-2">Регистрация</a>
-            @endif
+            <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Войти</a>
+            <a href="{{ route('register') }}" class="btn btn-primary me-2">Регистрация</a>
         @else
             <a href="{{ route('logout') }}" class="btn btn-primary me-2" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 Выйти
@@ -97,7 +92,7 @@
         <div class="row mt-4">
             <div class="col-12">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d919.3153040621115!2d37.34188286721633!3d55.66147620040459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b551ec8ba46463%3A0x1245ec77a8555f2e!2zMiwg0KHRgtC-0LvRjNC90L7QtSDQmtC_LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxMTk2MTk!5e0!3m2!1sru!2sru!4v1611690088786!5m2!1sru!2sru" class="embed-responsive-item" allowfullscreen width="100%" height="100%"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d919.3153040621115!2d37.34188286721633!3d55.66147620040459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b551ec8ba46463%3A0x1245ec77a8555f2e!2zMiwg0KHRgtC-0LvRjNC90L7QtSDQmtC_LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxMTk2MTk!5e0!3m2!1sru!2sru" class="embed-responsive-item" allowfullscreen width="100%" height="100%"></iframe>
                 </div>
             </div>
         </div>
@@ -115,5 +110,23 @@
         document.body.classList.toggle('bg-dark');
 
         const header = document.querySelector('header');
+        const footer = document.querySelector('footer');
+        const main = document.querySelector('main');          
+        header.classList.toggle('bg-light');
+        header.classList.toggle('bg-dark');
+
+        footer.classList.toggle('bg-light');
+        footer.classList.toggle('bg-dark');
+        footer.classList.toggle('text-dark');
+        footer.classList.toggle('text-white');
+
+        main.classList.toggle('bg-light');
+        main.classList.toggle('bg-dark');
+        main.classList.toggle('text-dark');
+        main.classList.toggle('text-white');
+
     });
 </script>
+
+</body>
+</html>
