@@ -115,24 +115,5 @@
         document.body.classList.toggle('bg-dark');
 
         const header = document.querySelector('header');
-        const footer = document.querySelector('footer');
-        const main = document.querySelector('main');          
-        header.classList.toggle('bg-light');
-        header.classList.toggle('bg-dark');
-
-        footer.classList.toggle('bg-light');
-        footer.classList.toggle('bg-dark');
-        footer.classList.toggle('text-dark');
-        footer.classList.toggle('text-white');
-
-        main.classList.toggle('bg-light');
-        main.classList.toggle('bg-dark');
-        main.classList.toggle('text-dark');
-        main.classList.toggle('text-white');
-
     });
 </script>
-
-</body>
-</html>
-
